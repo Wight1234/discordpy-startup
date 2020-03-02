@@ -5,7 +5,7 @@ from discord.ext import tasks
 from datetime import datetime 
 
 pytoken = os.environ['DISCORD_BOT_TOKEN']
-CHANNEL_ID = 653100735281758208 #チャンネルID
+CHANNEL_ID = 662304570642268180 #チャンネルID
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
 
@@ -15,7 +15,7 @@ async def loop():
     await client.wait_until_ready()
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '15:00':
+    if now == '23:32':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('3月3日(火)')  
 
