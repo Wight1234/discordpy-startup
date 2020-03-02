@@ -17,7 +17,7 @@ async def loop():
     now = datetime.now().strftime('%H:%M')
     if now == '15:00':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('3月1日(日)')  
+        await channel.send('3月3日(火)')  
 
 #ループ処理実行
 loop.start()
