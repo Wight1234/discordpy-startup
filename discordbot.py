@@ -5,7 +5,7 @@ from discord.ext import tasks
 from datetime import datetime 
 
 pytoken = os.environ['DISCORD_BOT_TOKEN']
-CHANNEL_ID = 662304570642268180 #チャンネルID
+CHANNEL_ID = 653100735281758208 #チャンネルID
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
 
@@ -18,6 +18,18 @@ async def loop():
     if now == '23:39':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('おはよう')  
+
+    if now == '04:30':
+        channel = client.get_channel(CHANNEL_ID)
+        await channel.send('@everyone\nクラン活動\n30分前')  
+
+    if now == '05:00':
+        channel = client.get_channel(CHANNEL_ID)
+        await channel.send('@everyone\nクラン活動')  
+
+    if now == '06:00':
+        channel = client.get_channel(CHANNEL_ID)
+        await channel.send('@everyone\nクラン活動\n終了') 
 
 #ループ処理実行
 loop.start()
