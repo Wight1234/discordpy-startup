@@ -19,7 +19,7 @@ async def loop():
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('3月7日(土)')  
 
-     if now == '11:30':
+    if now == '11:30':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('@everyone\nクラン活動\n30分前')  
 
