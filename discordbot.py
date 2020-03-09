@@ -35,7 +35,7 @@ async def loop():
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('@everyone\nクラン活動')  
 
-    if now == '13:00':
+    if now == '04:51':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('@everyone\nクラン活動\n終了') 
 
