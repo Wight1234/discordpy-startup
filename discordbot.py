@@ -15,11 +15,11 @@ async def loop():
     await client.wait_until_ready()
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '04:53':
+    if now == '05:00':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('3月10日(火)\n本日はクラン活動があります。')  
 
-    if now == '09:00':
+    if now == '10:00':
         channel = client.get_channel(CHANNEL_ID)
 
     A_user = discord.utils.get(client.users,name="VE1L")
