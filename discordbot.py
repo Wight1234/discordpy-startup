@@ -15,13 +15,9 @@ async def loop():
     await client.wait_until_ready()
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '10:00':
-    channel = client.get_channel(CHANNEL_ID)
-
-    A_user = discord.utils.get(client.users,name="VE1L")
-
-    reply = A_user.mention + "さん\n幸福はノスタルジーに眠る杯\n30分前') 
-    await channel.send(reply)
+    if now == '15:00':
+        channel = client.get_channel(CHANNEL_ID)
+        await channel.send('@everyone\n3月11日(水)\n本日エンドゾーンはありません。')  
 
     if now == '11:30':
         channel = client.get_channel(CHANNEL_ID)
@@ -30,6 +26,10 @@ async def loop():
     if now == '12:00':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('@everyone\nクラン活動')  
+
+    if now == '13:00':
+        channel = client.get_channel(CHANNEL_ID)
+        await channel.send('@everyone\nクラン活動\n終了') 
 
 #ループ処理実行
 loop.start()
