@@ -17,7 +17,7 @@ async def loop():
     now = datetime.now().strftime('%H:%M')
     if now == '15:00':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('3月13日(金)\n本日は14時よりクラン活動があります。')  
+        await channel.send('3月15日(日)\n本日クラン活動が14時よりあります。')  
 
     if now == '04:30':
         channel = client.get_channel(CHANNEL_ID)
@@ -35,3 +35,4 @@ async def loop():
 loop.start()
 # Botの起動とDiscordサーバーへの接続
 client.run(pytoken)
+
