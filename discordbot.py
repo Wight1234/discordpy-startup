@@ -19,18 +19,6 @@ async def loop():
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('3月15日(日)\n本日クラン活動が14時よりあります。')  
 
-    if now == '04:30':
-        channel = client.get_channel(CHANNEL_ID)
-        await channel.send('@everyone\nクラン活動\n30分前')  
-
-    if now == '05:00':
-        channel = client.get_channel(CHANNEL_ID)
-        await channel.send('@everyone\nクラン活動')  
-
-    if now == '06:00':
-        channel = client.get_channel(CHANNEL_ID)
-        await channel.send('@everyone\nクラン活動\n終了') 
-
 #ループ処理実行
 loop.start()
 # Botの起動とDiscordサーバーへの接続
