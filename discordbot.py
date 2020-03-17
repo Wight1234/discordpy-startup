@@ -15,7 +15,7 @@ async def loop():
     await client.wait_until_ready()
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '15:00':
+    if now == '15:13':
         channel = client.get_channel(CHANNEL_ID)
             await channel.send('3月18日(水)\n本日クラン活動はありません')  
 
