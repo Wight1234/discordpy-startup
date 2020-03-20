@@ -15,21 +15,33 @@ async def loop():
     await client.wait_until_ready()
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '15:21':
+    if now == '15:38':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('3月21日(土)\n本日21時よりクラン活動があります。')  
 
     if now == '03:30':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('@everyone\nFNCS 第一週\n30分前')  
+        await channel.send('@everyone\nFNCS 第1週\n30分前')  
+
+    if now == '07:00':
+        channel = client.get_channel(CHANNEL_ID)
+        await channel.send('@everyone\nFNCS 第1週結果\nhttps://fortnitetracker.com/events?region=ASIA')  
 
     if now == '07:30':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('@everyone\nFNCS 第一週\n30分前')  
+        await channel.send('@everyone\nFNCS 第1週\n30分前')  
+
+    if now == '11:00':
+        channel = client.get_channel(CHANNEL_ID)
+        await channel.send('@everyone\nFNCS 第1週結果\nhttps://fortnitetracker.com/events?region=ASIA')  
 
     if now == '08:30':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('@everyone\nアジア ハイプナイト\n30分前') 
+
+    if now == '12:00':
+        channel = client.get_channel(CHANNEL_ID)
+        await channel.send('@everyone\nアジア　ハイプナイト結果\nhttps://fortnitetracker.com/events?region=ASIA')  
 
     if now == '11:30':
         channel = client.get_channel(CHANNEL_ID)
