@@ -31,15 +31,15 @@ async def loop():
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('@everyone\nアジア ハイプナイト\n30分前') 
 
-    if now == '04:30':
+    if now == '11:30':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('@everyone\nクラン活動\n30分前') 
 
-    if now == '05:00':
+    if now == '12:00':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('@everyone\nクラン活動') 
 
-    if now == '06:00':
+    if now == '13:00':
         channel = client.get_channel(CHANNEL_ID)
         await channel.send('@everyone\nクラン活動\n終了') 
 
