@@ -25,7 +25,7 @@ async def loop():
 
     if now == '07:00':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('@everyone\nFNCS 第1週結果\nhttps://fortnitetracker.com/events?region=ASIA')  
+        await channel.send('@here\nFNCS 第1週結果\nhttps://fortnitetracker.com/events?region=ASIA')  
 
     if now == '07:30':
         channel = client.get_channel(CHANNEL_ID)
@@ -33,7 +33,7 @@ async def loop():
 
     if now == '11:00':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('@everyone\nFNCS 第1週結果\nhttps://fortnitetracker.com/events?region=ASIA')  
+        await channel.send('@here\nFNCS 第1週結果\nhttps://fortnitetracker.com/events?region=ASIA')  
 
     if now == '08:30':
         channel = client.get_channel(CHANNEL_ID)
@@ -41,7 +41,7 @@ async def loop():
 
     if now == '12:00':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('@everyone\nアジア　ハイプナイト結果\nhttps://fortnitetracker.com/events?region=ASIA')  
+        await channel.send('@here\nアジア　ハイプナイト結果\nhttps://fortnitetracker.com/events?region=ASIA')  
 
     if now == '11:30':
         channel = client.get_channel(CHANNEL_ID)
