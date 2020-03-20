@@ -15,9 +15,9 @@ async def loop():
     await client.wait_until_ready()
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '15:07':
+    if now == '15:00':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('3月21日(土)\n本日14時よりクラン活動があります。')  
+        await channel.send('3月22日(日)\n本日14時よりクラン活動があります。')  
 
     if now == '03:30':
         channel = client.get_channel(CHANNEL_ID)
