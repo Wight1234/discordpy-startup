@@ -15,25 +15,9 @@ async def loop():
     await client.wait_until_ready()
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '14:56':
-        channel = client.get_channel(CHANNEL_ID)
-        await channel.send('問題')  
-
-    if now == '14:57':
-        channel = client.get_channel(CHANNEL_ID)
-        await channel.send('明日は何の日でしょうか。')  
-
-    if now == '14:58':
-        channel = client.get_channel(CHANNEL_ID)
-        await channel.send('正解は、')  
-
-    if now == '14:59':
-        channel = client.get_channel(CHANNEL_ID)
-        await channel.send('やまとの誕生日です。')  
-
     if now == '15:00':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('3月22日(日)\n本日21時よりクラン活動があります。')  
+        await channel.send('3月23日(月)\n本日クラン活動はありません。')  
 
     if now == '11:30':
         channel = client.get_channel(CHANNEL_ID)
