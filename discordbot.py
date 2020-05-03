@@ -17,7 +17,7 @@ async def loop():
     now = datetime.now().strftime('%H:%M')
     if now == '00:00':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('a')  
+        await channel.send('')  
 
 #ループ処理実行
 loop.start()
