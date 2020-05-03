@@ -5,7 +5,7 @@ from discord.ext import tasks
 from datetime import datetime 
 
 pytoken = os.environ['DISCORD_BOT_TOKEN']
-CHANNEL_ID = 694362149539151927 #チャンネルID
+CHANNEL_ID = 685060087852695552 #チャンネルID
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
 
