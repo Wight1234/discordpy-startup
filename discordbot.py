@@ -5,7 +5,7 @@ from discord.ext import tasks
 from datetime import datetime 
 
 pytoken = os.environ['DISCORD_BOT_TOKEN']
-CHANNEL_ID = 713696619610243116 #チャンネルID
+CHANNEL_ID = 662304570642268180 #チャンネルID
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
 
@@ -15,9 +15,9 @@ async def loop():
     await client.wait_until_ready()
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '02:56':
+    if now == '14:51':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('カスタムキー')  
+        await channel.send('test')  
 
 #ループ処理実行
 loop.start()
