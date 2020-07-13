@@ -15,9 +15,17 @@ async def loop():
     await client.wait_until_ready()
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '14:51':
+    if now == '11:30':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('test')  
+        await channel.send('@everyone\nクラン活動30分前')  
+
+    if now == '12:00':
+        channel = client.get_channel(CHANNEL_ID)
+        await channel.send('@everyone\nクラン活動\nフレンドじゃない方は、「らむねぼっと」に送ってください。')  
+
+    if now == '13:00':
+        channel = client.get_channel(CHANNEL_ID)
+        await channel.send('@here\nクラン活動終了\nお疲れ様でした。')  
 
 #ループ処理実行
 loop.start()
